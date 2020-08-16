@@ -22,7 +22,7 @@ namespace CuffedTK
                 if ((victimRole == RoleType.ClassD && killerRole.IsScientistTeam()) || (victimRole == RoleType.Scientist && killerRole.IsDClassTeam()))
                 {
                     ev.Player.SendConsoleMessage(outputMessage);
-                    Log.Error(outputMessage);
+                    Log.Warn(outputMessage);
 
                     if (MainPlugin.Configs.AutoJail)
                     {
