@@ -22,7 +22,7 @@ The Victim gets all necessary info to report the occurence to the server staff:<
 <img src="https://i.ibb.co/WkHFv0y/img1.jpg" width="50%" height="auto"></img><br>
 <br>
 The Server console logs the same info to match:<br>
-<img src="https://i.ibb.co/p2Wwcjh/img2.png" width="50%" height="auto"></img><br>
+<img src="https://i.ibb.co/bRJBSc6/img2.png" width="50%" height="auto"></img><br>
 <br>
 Automatic jailing on teamkilling can be toggled within the **Remote Admin Console** with:<br>
 - autojail
