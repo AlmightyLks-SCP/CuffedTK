@@ -8,7 +8,7 @@ namespace CuffedTK
         SynapseMajor = 1,
         SynapseMinor = 2,
         SynapsePatch = 1,
-        Version = "1.0.0")]
+        Version = "1.0")]
     public class MainPlugin : Plugin
     {
         public static bool AutoJail { get; set; }
