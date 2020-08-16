@@ -3,7 +3,7 @@
 namespace CuffedTK
 {
     [PluginDetails(Author = "AlmightyLks",
-        Description = "A plugin for handling Cuffed-Scientist Teamkilling",
+        Description = "A plugin for handling Cuffed Teamkilling",
         Name = "CuffedTK",
         SynapseMajor = 1,
         SynapseMinor = 2,
