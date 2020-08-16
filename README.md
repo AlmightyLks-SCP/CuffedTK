@@ -3,11 +3,11 @@
 A simple SCP SL <a href="https://github.com/SynapseSL/Synapse">Synapse</a> Plugin to log cuffed-teamkilling.<br>
 The following scenarios will trigger actions by the plugin:<br>
 
-- Cuffed D-Bois shot by
+- Cuffed D-Bois killed by
   - Scientist
   - Facility Guard
   - NTF/MTF
-- Cuffed Scientist shot by
+- Cuffed Scientist killed by
   - Chaos Insurgency
   - D-Boi
 
