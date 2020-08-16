@@ -11,8 +11,8 @@ namespace CuffedTK
         public string Description { get; } = "Toggles Auto Jailing On Teamkill";
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            MainPlugin.AutoJail = !MainPlugin.AutoJail;
-            response = "Auto Jail: " + MainPlugin.AutoJail;
+            MainPlugin.Configs.AutoJail = !MainPlugin.Configs.AutoJail;
+            response = "Auto Jail: " + MainPlugin.Configs.AutoJail;
 
             return true;
         }

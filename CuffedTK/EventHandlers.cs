@@ -24,7 +24,7 @@ namespace CuffedTK
                     ev.Player.SendConsoleMessage(outputMessage);
                     Log.Error(outputMessage);
 
-                    if (MainPlugin.AutoJail)
+                    if (MainPlugin.Configs.AutoJail)
                     {
                         ev.Killer.Jail.DoJail(ev.Player);
                     }
