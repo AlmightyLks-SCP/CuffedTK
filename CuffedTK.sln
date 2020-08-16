@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuffedTK", "CuffedTK\CuffedTK.csproj", "{52F292B1-CB7B-42B6-A567-F252974C2319}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52F292B1-CB7B-42B6-A567-F252974C2319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F292B1-CB7B-42B6-A567-F252974C2319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F292B1-CB7B-42B6-A567-F252974C2319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F292B1-CB7B-42B6-A567-F252974C2319}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E09535C-BE24-4DF3-A47B-54ABE4CB58ED}
+	EndGlobalSection
+EndGlobal
