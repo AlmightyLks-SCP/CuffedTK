@@ -1,6 +1,6 @@
 # CuffedTK
 
-A simple SCP SL Synapse Plugin to log cuffed-teamkilling.<br>
+A simple SCP SL <a href="https://github.com/SynapseSL/Synapse">Synapse</a> Plugin to log cuffed-teamkilling.<br>
 The following scenarios will trigger actions by the plugin:<br>
 
 - Cuffed D-Bois shot by
