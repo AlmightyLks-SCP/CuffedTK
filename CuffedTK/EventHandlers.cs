@@ -1,4 +1,5 @@
 ﻿using Synapse;
+using Synapse.Api;
 using Synapse.Events;
 using Synapse.Events.Classes;
 
@@ -12,17 +13,22 @@ namespace CuffedTK
         }
         private void OnPlayerDeathEvent(PlayerDeathEvent ev)
         {
-            if (ev.Player.Role == RoleType.ClassD && (ev.Killer.Role.ToString().ToLower().Contains("ntf") || ev.Killer.Role == RoleType.Scientist || ev.Killer.Role == RoleType.FacilityGuard) || ev.Player.Role == RoleType.Scientist && (ev.Killer.Role == RoleType.ChaosInsurgency || ev.Killer.Role == RoleType.ClassD))
+            string outputMessage = "\nWas cuffed: " + ev.Player.IsCuffed + "\nVictim ID: " + ev.Player.UserId + "\nVictim: " + ev.Player.NickName + "\nKiller ID: " + ev.Killer.UserId + "\nKiller: " + ev.Killer.NickName;
+            RoleType victimRole = ev.Player.Role;
+            RoleType killerRole = ev.Killer.Role;
+
+            if (ev.Player.IsCuffed)
             {
-                if (ev.Player.IsCuffed)
+                if ((victimRole == RoleType.ClassD && killerRole.IsScientistTeam()) || (victimRole == RoleType.Scientist && killerRole.IsDClassTeam()))
                 {
-                    ev.Player.SendConsoleMessage("\nWas cuffed: " + ev.Player.IsCuffed + "\nVictim ID: " + ev.Player.UserId + "\nVictim: " + ev.Player.NickName + "\nKiller ID: " + ev.Killer.UserId + "\nKiller: " + ev.Killer.NickName);
-                    Log.Error("\nWas cuffed: " + ev.Player.IsCuffed + "\nVictim ID: " + ev.Player.UserId + "\nVictim: " + ev.Player.NickName + "\nKiller ID: " + ev.Killer.UserId + "\nKiller: " + ev.Killer.NickName);
+                    ev.Player.SendConsoleMessage(outputMessage);
+                    Log.Error(outputMessage);
+
                     if (MainPlugin.AutoJail)
+                    {
                         ev.Killer.Jail.DoJail(ev.Player);
+                    }
                 }
-                else
-                    ev.Player.SendConsoleMessage("\nWas cuffed: " + ev.Player.IsCuffed + "\nVictim ID: " + ev.Player.UserId + "\nVictim: " + ev.Player.NickName + "\nKiller ID: " + ev.Killer.UserId + "\nKiller: " + ev.Killer.NickName, "green");
             }
         }
     }
