@@ -6,8 +6,8 @@ namespace CuffedTK
         Description = "A plugin for handling Cuffed Teamkilling",
         Name = "CuffedTK",
         SynapseMajor = 1,
-        SynapseMinor = 2,
-        SynapsePatch = 1,
+        SynapseMinor = 3,
+        SynapsePatch = 0,
         Version = "1.0")]
     public class MainPlugin : Plugin
     {
