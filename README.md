@@ -14,7 +14,7 @@ The following scenarios will trigger actions by the plugin:<br>
 ### Resources used
 
 - .NET Framework 4.8 Class Library
-- **SynapseSL** NuGet Package | Version 1.2.1
+- **SynapseSL** NuGet Package | Version 1.3.0
 ---
 ### Actions
 
