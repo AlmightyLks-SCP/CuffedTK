@@ -1,3 +1,8 @@
+# OUTDATED
+This Plugin was intended for Synapse 2, and is not made, nor compatible with Synapse3.
+
+---
+
 # CuffedTK
 
 A simple SCP SL <a href="https://github.com/SynapseSL/Synapse">Synapse</a> Plugin to log cuffed-teamkilling.<br>
